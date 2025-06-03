@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Obsidian Widget</string>
+    <string name="add_note">Add Note</string>
+    <string name="new_note">New note</string>
+</resources>
