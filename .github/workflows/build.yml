@@ -28,10 +28,7 @@ jobs:
       run: |
           if [ ! -f gradle/wrapper/gradle-wrapper.jar ]; then
             echo "gradle-wrapper.jar missing, regenerating..."
-            curl -L https://services.gradle.org/distributions/gradle-8.4-bin.zip -o gradle-8.4-bin.zip
-            unzip gradle-8.4-bin.zip -d gradle-temp
-            mv gradle-temp/gradle-8.4 gradle
-            rm -rf gradle-temp gradle-8.4-bin.zip
+            ./gradlew wrapper --gradle-version 8.4
           fi
 
     - name: Build with Gradle
